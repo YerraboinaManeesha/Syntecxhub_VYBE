@@ -1,0 +1,24 @@
+# Render Blueprint: Dashboard -> New -> Blueprint, pick this repository.
+services:
+  - type: web
+    name: vybe-api
+    runtime: node
+    rootDir: server
+    plan: free
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: NODE_ENV
+        value: production
+      - key: CLIENT_ORIGIN
+        sync: false        # e.g. https://your-app.vercel.app (no trailing slash)
+      - key: MONGODB_URI
+        sync: false        # your Atlas connection string
+      - key: JWT_SECRET
+        generateValue: true
+      - key: COOKIE_SAMESITE
+        value: lax

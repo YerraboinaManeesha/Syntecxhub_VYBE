@@ -1,0 +1,69 @@
+/* VYBE design tokens: Rose Pink + Plum + Blush + Peach on a deep plum-black.
+   Use these variables everywhere; do not hardcode colours in component CSS. */
+:root {
+  /* Surfaces */
+  --color-bg: #1c0a1a;
+  --color-sidebar: #250e23;
+  --color-surface: #301430;
+  --color-elevated: #3d1b3a;
+
+  /* Accents */
+  --color-accent: #e75480;
+  --color-accent-soft: #f9a8d4;
+  --color-accent-strong: #c23b73;
+  --color-accent-tint: rgba(231, 84, 128, 0.16);
+  --color-peach: #ffd1b8;
+  --color-plum: #702963;
+  --gradient-brand: linear-gradient(135deg, #e75480 0%, #8e2f6e 70%, #702963 100%);
+
+  /* Messages */
+  --color-bubble-sent: linear-gradient(135deg, #e75480 0%, #8e2f6e 70%, #702963 100%);
+  --color-tick-sent: #a8779d;
+  --color-tick-delivered: #e0608f;
+  --color-tick-read: #ff7eb0;
+  --color-bubble-received: #3d1b3a;
+
+  /* Text */
+  --color-text: #fff0f6;
+  --color-text-secondary: #e0b4cb;
+  --color-text-muted: #b88aa8;
+
+  /* Lines and status */
+  --color-border: #4d2547;
+  --color-online: #34d399;
+  --color-success: #34d399;
+  --color-warning: #fbbf24;
+  --color-error: #f87171;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-hero: clamp(2.25rem, 5.5vw, 4rem);
+
+  /* Spacing scale (4px base) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 5rem;
+
+  /* Restrained radius scale */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Motion */
+  --transition: 150ms ease;
+
+  /* Layout */
+  --container: 1120px;
+  --gutter: 1.25rem;
+}
