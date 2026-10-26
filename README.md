@@ -197,7 +197,7 @@ The application is deployed using **Render**.
 - **Start Command:** `npm start`
 
 **Backend URL:** https://vybe-backend-udd9.onrender.com
-**Frontend URL:** https://vybe-z326.onrender.com
+
 
 The frontend communicates with the backend through API requests and Socket.IO. Both services require the appropriate production environment configuration.
 
